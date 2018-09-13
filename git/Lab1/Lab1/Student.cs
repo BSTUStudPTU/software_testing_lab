@@ -8,8 +8,10 @@ namespace Lab1
 {
     class Student
     {
-        public int[] marks = new int[3];
-        public string name;
+        public int[] marks { get; set; } = new int[3];
+        public string name { get; set; }
+
+        public Student() { }
 
         public Student(int a, int b, int c, string name)
         {
