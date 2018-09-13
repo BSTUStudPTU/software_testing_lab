@@ -10,18 +10,11 @@ namespace Lab1
     {
         static void Main(string[] args)
         {
-            Student Student1 = new Student(5, 5, 5, "Egor");
-            Student Student2 = new Student(4, 4, 4, "Anton");
-            Student Student3 = new Student(6, 6, 6, "Artem");
-            Student Student4 = new Student(7, 7, 7, "Sasha");
-            Student Student5 = new Student(8, 8, 8, "Pasha");
-            Student Student6 = new Student(9, 9, 9, "Dasha");
             List<Student> Group = new List<Student>();
-            Group.Add(Student1); Group.Add(Student2); Group.Add(Student3); Group.Add(Student4); Group.Add(Student5); Group.Add(Student6);
-            double averageGroupScore = 0;
+            Adding:
             Console.WriteLine("\nEnter 1 to add new student to the group or enter 0 to get group statistic.\n");
             int a = int.Parse(Console.ReadLine());
-
+            if (a != 0 && a != 1) goto Adding;
             while(a!=0)
             {
                 Console.WriteLine("\nEnter the data about new student\n");
@@ -33,14 +26,21 @@ namespace Lab1
                 Console.WriteLine("\nEnter 1 to add new student to the group or enter 0 to get group statistic.");
                 a = int.Parse(Console.ReadLine());
             }
-
-            foreach (Student i in Group)
+            if (Group.Count > 0)
             {
-                i.ShowInfo();
-                averageGroupScore = averageGroupScore + i.AverageScore();
+                double averageGroupScore = 0;
+                foreach (Student i in Group)
+                {
+                    i.ShowInfo();
+                    averageGroupScore = averageGroupScore + i.AverageScore();
+                }
+                Console.WriteLine("Average group score: " + (averageGroupScore / Group.Count) + "\n");
             }
-            Console.WriteLine("Average group score: " + (averageGroupScore / Group.Count) + "\n");
-
+            else
+            {
+                Console.WriteLine("Group is empty!");
+                goto Adding;
+            } 
         }
     }
 }
