@@ -24,7 +24,10 @@ namespace Lab1
                 i.ShowInfo();
                 averageGroupScore = averageGroupScore + i.AverageScore();
             }
-            Console.WriteLine("Average group score: " + (averageGroupScore/Group.Count));
+            Console.WriteLine("Average group score: " + (averageGroupScore/Group.Count) + "\n");
+
+            List<Student> Group2 = new List<Student>();
+            Console.WriteLine("\nNew Group is created. \nEnter 1 to add new student to the group or enter 0 to get info\n");
         }
     }
 }
