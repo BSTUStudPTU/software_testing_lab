@@ -42,7 +42,7 @@ namespace Lab1
                 a = int.Parse(Console.ReadLine());
             }
 
-            double averageGroup2Score = 0;
+            double averageGroup2Score = 0; //avr score of second group
             foreach (Student i in Group2)
             {
                 i.ShowInfo();
