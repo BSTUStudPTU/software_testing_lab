@@ -17,7 +17,7 @@ namespace Lab1
             Student Student5 = new Student(8, 8, 8, "Pasha");
             Student Student6 = new Student(9, 9, 9, "Dasha");
             List<Object> Group = new List<object>();
-            Group.Add(Student1); Group.Add(Student2); Group.Add(Student3); Group.Add(Student4);
+            Group.Add(Student1); Group.Add(Student2); Group.Add(Student3); Group.Add(Student4); Group.Add(Student5); Group.Add(Student6);
             double averageGroupScore = 0;
             foreach (Student i in Group)
             {
