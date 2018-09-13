@@ -14,6 +14,8 @@ namespace Lab1
             Student Student2 = new Student(4, 4, 4, "Anton");
             Student Student3 = new Student(6, 6, 6, "Artem");
             Student Student4 = new Student(7, 7, 7, "Sasha");
+            Student Student5 = new Student(8, 8, 8, "Pasha");
+
             List<Object> Group = new List<object>();
             Group.Add(Student1); Group.Add(Student2); Group.Add(Student3); Group.Add(Student4);
             double averageGroupScore = 0;
