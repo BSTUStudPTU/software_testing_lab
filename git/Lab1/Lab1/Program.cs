@@ -19,15 +19,7 @@ namespace Lab1
             List<Student> Group = new List<Student>();
             Group.Add(Student1); Group.Add(Student2); Group.Add(Student3); Group.Add(Student4); Group.Add(Student5); Group.Add(Student6);
             double averageGroupScore = 0;
-            foreach (Student i in Group)
-            {
-                i.ShowInfo();
-                averageGroupScore = averageGroupScore + i.AverageScore();
-            }
-            Console.WriteLine("Average group score: " + (averageGroupScore/Group.Count) + "\n");
-
-            List<Student> Group2 = Group;
-            Console.WriteLine("\nNew Group is created.\nEnter 1 to add new student to the group or enter 0 to get group statistic.\n");
+            Console.WriteLine("\nEnter 1 to add new student to the group or enter 0 to get group statistic.\n");
             int a = int.Parse(Console.ReadLine());
 
             while(a!=0)
@@ -37,18 +29,18 @@ namespace Lab1
                 Console.WriteLine("First mark: "); int m1 = int.Parse(Console.ReadLine());
                 Console.WriteLine("Second mark: "); int m2 = int.Parse(Console.ReadLine());
                 Console.WriteLine("Third mark: "); int m3 = int.Parse(Console.ReadLine());
-                Group2.Add(new Student(m1, m2, m3, _name));
+                Group.Add(new Student(m1, m2, m3, _name));
                 Console.WriteLine("\nEnter 1 to add new student to the group or enter 0 to get group statistic.");
                 a = int.Parse(Console.ReadLine());
             }
 
-            double averageGroup2Score = 0; //avr score of second group
-            foreach (Student i in Group2)
+
+            foreach (Student i in Group)
             {
                 i.ShowInfo();
-                averageGroup2Score = averageGroup2Score + i.AverageScore();
+                averageGroupScore = averageGroupScore + i.AverageScore();
             }
-            Console.WriteLine("Average score of the second group: " + (averageGroup2Score / Group2.Count) + "\n");
+            Console.WriteLine("Average group score: " + (averageGroupScore / Group.Count) + "\n");
 
         }
     }
