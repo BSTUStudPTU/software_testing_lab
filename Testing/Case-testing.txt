@@ -1,0 +1,33 @@
+__Test-case #1: Checking round trip route type__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Insert a city for way-out and way-in at the first string (Ex: Minsk -> Moscow)
+3. Insert a city for way-in at the second string that is different of the way-out city at the first string (Ex: Moscow -> Berlin) 
+
+Expected result: first way-out city and second way-in city must be the same (Ex: Berlin and Berlin)
+
+__Test-case #2: Checking auto-changing of route type on multi-type__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Add a route
+
+Expected result: Route type must be "Multi-city"
+
+__Test-case #3: Checking auto-changing of route type on One way__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Delete route
+
+Expected result: Route type must be "One way"
+
+__Test-case #4: Checking multi-city route type__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Insert a city for way-out and way-in at the first string (Ex: Minsk -> Moscow)
+3. Change route type on Multi-city
+4. Insert a city for way-in at the second string that is different of the way-out city at the first string (Ex: Moscow -> Berlin) 
+
+Expected result: first way-out city and second way-in city must different (Ex: Minsk and Berlin)
+
+
+
