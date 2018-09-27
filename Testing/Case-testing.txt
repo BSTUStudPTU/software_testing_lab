@@ -1,0 +1,98 @@
+__Test-case #1: Checking round trip route type__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Insert a city for way-out and way-in at the first string (Ex: Minsk -> Moscow)
+3. Insert a city for way-in at the second string that is different of the way-out city at the first string (Ex: Moscow -> Berlin) 
+
+Expected result: first way-out city and second way-in city must be the same (Ex: Berlin and Berlin)
+
+__Test-case #2: Checking auto-changing of route type on multi-type__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Add a route
+
+Expected result: Route type must be "Multi-city"
+
+__Test-case #3: Checking auto-changing of route type on One way__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Delete route
+
+Expected result: Route type must be "One way"
+
+__Test-case #4: Checking multi-city route type__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Insert a city for way-out and way-in at the first string (Ex: Minsk -> Moscow)
+3. Change route type on Multi-city
+4. Insert a city for way-in at the second string that is different of the way-out city at the first string (Ex: Moscow -> Berlin) 
+
+Expected result: first way-out city and second way-in city must different (Ex: Minsk and Berlin)
+
+__Test-case #5: Checking correct date choice_
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Click on calendar 
+3. Choose the date of way-out (Ex: 24 Sep)
+4. Choose the date of way-in. It must be earlier than the first date (Ex: 22 Sep)
+
+Expected result: You should not be able to choose the day before your way-out
+
+__Test-case #6: Checking correct translation of the application__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Choose English language on the right conor
+3. Enter the route on the form
+4. Click on 'Find tickets' button
+5. Try to book the ticket
+
+Expected result: all information messages and all strings must be in english.
+Bugs found: some messages and buttons are in russian! Also registration form of the booking is in russian!
+
+__Test-case #7: Checking price of the policy costs__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Click on 'Inusrance' on the form
+3. Choose the territory of Insurance
+4. Insert 'Arrival' and 'Departure' dates
+5. Choose your insured price
+6. Choose your age and your purpose of the visitng this country
+7. Try to change Insured price several times
+
+Expected result: Cost of the policy should be changed if you change the insured price. 
+The bigger your inser price, the bigger your cost of the plicy as well.
+
+__Test-case #8: Checking correct registration__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Choose English language on the right conor
+3. Enter the route on the form
+4. Click on 'Find tickets' button
+5. Try to book the ticket
+6. Enter all needed information on registration form expecting one or two fields
+7. Click 'book' button
+
+Expected result: All core fields that doesn't contain any informatin should be underlined by a messages.
+You couldn't be able to book a ticket before you insert all needed fields
+
+__Test-case #9: Checking __
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Choose English language on the right conor
+3. Enter the route on the form
+4. Click on 'Find tickets' button
+5. Try to book the ticket
+6. Enter all field on a registration form
+7. Try to chade the code of the country (second field) on +375
+
+Expected result: The code of the country should change on belarus
+Founded bugs: There is no code of the Belarus in application database!
+
+__Test-case #10: Checking travelling to the same city__
+STEPS:
+1. Enter https://aviabilet.kz/
+2. Try to insert one city to both way-out and way-in fields on the form
+3. Click 'Find ticket' button
+
+Expected result: User shouldn't be able to go further and find thetickets. 
+Application should send a message that user must enter all information correctly
