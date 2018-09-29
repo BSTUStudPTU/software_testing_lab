@@ -38,7 +38,7 @@ namespace UnitTests
         {
 
             double firstSide = 10, secondSide = 90, thirdSide = 6;
-            bool expectedResult = true;
+            bool expectedResult = false;
             TestedClass myTestedClass = new TestedClass();
             Assert.AreEqual(expectedResult, myTestedClass.TriangleCheck(firstSide, secondSide, thirdSide));
         }
@@ -56,7 +56,7 @@ namespace UnitTests
         {
 
             double firstSide = 181135, secondSide = 164835, thirdSide = 410450;
-            bool expectedResult = true;
+            bool expectedResult = false;
             TestedClass myTestedClass = new TestedClass();
             Assert.AreEqual(expectedResult, myTestedClass.TriangleCheck(firstSide, secondSide, thirdSide));
         }
@@ -65,7 +65,7 @@ namespace UnitTests
         {
 
             double firstSide = 3, secondSide = 2, thirdSide = 1;
-            bool expectedResult = true;
+            bool expectedResult = false;
             TestedClass myTestedClass = new TestedClass();
             Assert.AreEqual(expectedResult, myTestedClass.TriangleCheck(firstSide, secondSide, thirdSide));
         }
@@ -74,7 +74,7 @@ namespace UnitTests
         {
 
             double firstSide = 3, secondSide = 3, thirdSide = 6;
-            bool expectedResult = true;
+            bool expectedResult = false;
             TestedClass myTestedClass = new TestedClass();
             Assert.AreEqual(expectedResult, myTestedClass.TriangleCheck(firstSide, secondSide, thirdSide));
         }
@@ -82,7 +82,7 @@ namespace UnitTests
         public void NinesUnitTest()
         {
             double firstSide = 30, secondSide = 60, thirdSide = 90.001;
-            bool expectedResult = true;
+            bool expectedResult = false;
             TestedClass myTestedClass = new TestedClass();
             Assert.AreEqual(expectedResult, myTestedClass.TriangleCheck(firstSide, secondSide, thirdSide));
         }
