@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Lab3
 {
-    class Program
+    public class TestedClass
     {
-        public static bool TriangleCheck(double firstSide, double secondSide, double thirdSide)
+        public bool TriangleCheck(double firstSide, double secondSide, double thirdSide)
         {
             if ((firstSide + secondSide > thirdSide) && (secondSide + thirdSide > firstSide) && (firstSide + thirdSide > secondSide))
             {
@@ -17,6 +17,9 @@ namespace Lab3
             else
                 return false;
         }
+    }
+    class Program
+    {
         static void Main(string[] args)
         {
         }
