@@ -5,22 +5,30 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using NUnit.Framework;
+using OpenQA.Selenium.Support.UI;
 
-/*Тест-кейс 1.1: Проверка автокоррекции введенных данных при типе маршрута «В обе стороны»
-1.	Зайти на сайт https://aviabilet.kz/
-2.	Выберите тип маршрута «В обе стороны»
-3.	В первой строке ввести города в полях (Откуда? и Куда?; Например: Минск -> Москва)
-4.	Во второй строке изменить город в первом поле (Например: Москва на Берлин)
-5.	Во второй строке изменить город во втором столе (Например:  Минск на Лондон)
-Ожидаемый результат: Приложение должно изменить соответственно города в полях в первой строчке на измененные во второй. */
 namespace Web_Driver
 {
     class Program
     {
         static void Main(string[] args)
         {
-            IWebDriver chromeWebDriver = new ChromeDriver();
-            chromeWebDriver.Navigate().GoToUrl("https://aviabilet.kz");
+            //Due to my website is create using only javascript -> i can't use it in order to test(i couldn't find how to do this) 
+            //Because of this problem i use www.uralairlines.ru 
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://www.uralairlines.ru/");
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(3));
+
+            driver.FindElement(By.XPath("//a[@href='#close']")).Click();
+            driver.FindElement(By.XPath("//input[@placeholder='Откуда']")).Clear();
+            driver.FindElement(By.XPath("//input[@placeholder='Откуда']")).SendKeys("ББаку");
+            driver.FindElement(By.XPath("//input[@placeholder='Куда']")).Clear();
+            driver.FindElement(By.XPath("//input[@placeholder='Куда']")).SendKeys("ММинск");
+
+            driver.FindElement(By.XPath("//div[@class='butsWr']")).Click();
+            //Assert.AreEqual(driver.FindElement(By.XPath("//span[@class='city']")).Text, "Баку");
+            driver.Quit();
         }
     }
 }
