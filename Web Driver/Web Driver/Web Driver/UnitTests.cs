@@ -20,7 +20,6 @@ namespace Web_Driver
             
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://www.uralairlines.ru/");
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(3));
 
             driver.FindElement(By.XPath("//a[@href='#close']")).Click();
             driver.FindElement(By.XPath("//input[@placeholder='Откуда']")).Clear();
