@@ -43,5 +43,9 @@ namespace Framework.Steps
         {
             mainPage.FindOnCiteByText(text);
         }
+        public void ChangeToEnglish()
+        {
+            mainPage.ChangeToEng();
+        }
     }
 }
