@@ -22,8 +22,8 @@ namespace Framework.Tests
             steps.InsertDepCity("Баку");
             steps.InsertArrCity("Москва");
             steps.ClickSearchBtn();
-            Assert.("Баку", driver.FindElement(By.XPath("//div[@data-v-6e19f88a class='flight-line']")).text);
-            Assert.("MOW", driver.FindElement(By.XPath("//span[@data-v-6e19f88a class='airport-suffix']")).text);
+            Assert.AreEqual(("Баку", driver.FindElement(By.XPath("//div[@data-v-6e19f88a class='flight-line']")).text));
+            Assert.AreEqual(("MOW", driver.FindElement(By.XPath("//span[@data-v-6e19f88a class='airport-suffix']")).text));
             steps.CloseBrowser();
         }
         [Test]
@@ -32,7 +32,7 @@ namespace Framework.Tests
             steps.InitBrowser();
             steps.InitMainPage();
             steps.ChangeToEnglish();
-            Assert.("EN", driver.FindElement(By.XPath("//span[@class='cur-lang']")).text);
+            Assert.AreEqual(("EN", driver.FindElement(By.XPath("//span[@class='cur-lang']")).text));
             steps.CloseBrowser();
         }
         [Test]
@@ -41,7 +41,7 @@ namespace Framework.Tests
             steps.InitBrowser();
             steps.InitMainPage();
             steps.FindOnCite("Москва");
-            Assert.("Москва", driver.FindElement(By.XPath("//input[@placeholder='Поиск']")).text);
+            Assert.AreEqual(("Москва", driver.FindElement(By.XPath("//input[@placeholder='Поиск']")).text));
             steps.CloseBrowser();
 
         }
