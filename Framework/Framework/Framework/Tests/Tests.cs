@@ -7,6 +7,7 @@ using Framework.Steps;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Support.PageObjects;
 
 namespace Framework.Tests
 {
@@ -21,6 +22,8 @@ namespace Framework.Tests
             steps.InsertDepCity("Баку");
             steps.InsertArrCity("Москва");
             steps.ClickSearchBtn();
+            Assert.("Баку", driver.FindElement(By.XPath("//div[@data-v-6e19f88a class='flight-line']")).text);
+            Assert.("MOW", driver.FindElement(By.XPath("//span[@data-v-6e19f88a class='airport-suffix']")).text);
             steps.CloseBrowser();
         }
         [Test]
@@ -29,6 +32,7 @@ namespace Framework.Tests
             steps.InitBrowser();
             steps.InitMainPage();
             steps.ChangeToEnglish();
+            Assert.("EN", driver.FindElement(By.XPath("//span[@class='cur-lang']")).text);
             steps.CloseBrowser();
         }
         [Test]
@@ -37,7 +41,9 @@ namespace Framework.Tests
             steps.InitBrowser();
             steps.InitMainPage();
             steps.FindOnCite("Москва");
-            
+            Assert.("Москва", driver.FindElement(By.XPath("//input[@placeholder='Поиск']")).text);
+            steps.CloseBrowser();
+
         }
     }
 }
