@@ -19,10 +19,10 @@ namespace Framework.Pages
         [FindsBy(How = How.XPath, Using = "//div[@class='butsWr']")]
         private IWebElement searchBtn;
 
-        [FindsBy(How = How.XPath, Using = "//input[@placeholder='Куда']")]
+        [FindsBy(How = How.XPath, Using = "//input[@id='avia-to']")]
         private IWebElement arrCity;
 
-        [FindsBy(How = How.XPath, Using = "//input[@placeholder='Откуда']")]
+        [FindsBy(How = How.XPath, Using = "//input[@id='avia-from']")]
         private IWebElement depCity;
 
         [FindsBy(How = How.XPath, Using = "//div[@class='header_search_button']")]
@@ -31,7 +31,7 @@ namespace Framework.Pages
         [FindsBy(How = How.XPath, Using = "//div[@class='header_search_button header_search_button_active']")]
         private IWebElement srchOnCiteBtnActive;
 
-        [FindsBy(How = How.XPath, Using = "//input[@placeholder='Поиск по сайту']")]
+        [FindsBy(How = How.XPath, Using = "//input[@id='headerTopSearchFormInput']")]
         private IWebElement srchOnCiteTextBox;
 
         [FindsBy(How = How.XPath, Using = "//span[@class='cur-lang']")]

@@ -17,23 +17,17 @@ namespace Framework.Steps
         public void InitBrowser()
         {
             driver = DriverInit.GetInstance();
+            mainPage = new MainPage(driver);
+            mainPage.OpenPage();
         }
         public void CloseBrowser()
         {
             DriverInit.CloseBrowser();
         }
-        public void InitMainPage()
+        public void InsertDepCityAndArrCity(string cityName_dep, string cityName_arr)
         {
-            mainPage = new MainPage(driver);
-            mainPage.OpenPage();
-        }
-        public void InsertDepCity(string cityName)
-        {
-            mainPage.InsertDepartureCity(cityName);
-        }
-        public void InsertArrCity(string cityName)
-        {
-            mainPage.InsertArrivalCity(cityName);
+            mainPage.InsertDepartureCity(cityName_dep);
+            mainPage.InsertArrivalCity(cityName_arr);
         }
         public void ClickSearchBtn()
         {

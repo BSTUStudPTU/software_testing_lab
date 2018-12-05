@@ -12,6 +12,10 @@ namespace Framework.Driver
     public class DriverInit
     {
         private static IWebDriver driver;
+        private DriverInit()
+        {
+
+        }
         public static IWebDriver GetInstance()
         {
             if (driver == null)

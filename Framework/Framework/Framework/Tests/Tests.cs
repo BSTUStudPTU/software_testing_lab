@@ -14,36 +14,36 @@ namespace Framework.Tests
     public class Tests
     {
         Framework.Steps.Steps steps = new Framework.Steps.Steps();
+        [SetUp]
+        public void Init()
+        {
+            steps.InitBrowser();
+
+        }
+        [TearDown]
+        public void Cleanup()
+        {
+            steps.CloseBrowser();
+        }
         [Test]
         public void FromBakuToMinskTestSearch()
         {
-            steps.InitBrowser();
-            steps.InitMainPage();
-            steps.InsertDepCity("Баку");
-            steps.InsertArrCity("Москва");
+            steps.InsertDepCityAndArrCity("Баку", "Мосвка");
             steps.ClickSearchBtn();
-            Assert.AreEqual(("Баку", driver.FindElement(By.XPath("//div[@data-v-6e19f88a class='flight-line']")).text));
-            Assert.AreEqual(("MOW", driver.FindElement(By.XPath("//span[@data-v-6e19f88a class='airport-suffix']")).text));
-            steps.CloseBrowser();
+            Assert.AreEqual("Баку", driver.FindElement(By.XPath("//div[@data-v-6e19f88a class='flight-line']")).text);
+            Assert.AreEqual("MOW", driver.FindElement(By.XPath("//span[@data-v-6e19f88a class='airport-suffix']")).text);
         }
         [Test]
         public void ChangeToEng()
         {
-            steps.InitBrowser();
-            steps.InitMainPage();
             steps.ChangeToEnglish();
-            Assert.AreEqual(("EN", driver.FindElement(By.XPath("//span[@class='cur-lang']")).text));
-            steps.CloseBrowser();
+            Assert.AreEqual("EN", driver.FindElement(By.XPath("//span[@class='cur-lang']")).text);
         }
         [Test]
         public void SearchOnSiteByTextMoscow()
         {
-            steps.InitBrowser();
-            steps.InitMainPage();
             steps.FindOnCite("Москва");
-            Assert.AreEqual(("Москва", driver.FindElement(By.XPath("//input[@placeholder='Поиск']")).text));
-            steps.CloseBrowser();
-
+            Assert.AreEqual("Москва", driver.FindElement(By.XPath("//input[@placeholder='Поиск']")).text);
         }
     }
 }
