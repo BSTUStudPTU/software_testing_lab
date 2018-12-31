@@ -11,9 +11,7 @@ namespace Framework
         static void Main(string[] args)
         {
             Framework.Tests.Tests tests = new Framework.Tests.Tests();
-            tests.FromBakuToMinskTestSearch();
-            tests.SearchOnSiteByTextMoscow();
-            tests.ChangeToEng();
+            tests.GoToRegistrationPage();
         }
     }
 }

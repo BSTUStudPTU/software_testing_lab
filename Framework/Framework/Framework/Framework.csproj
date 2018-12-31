@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Driver\DriverInit.cs" />
+    <Compile Include="Pages\BookPage.cs" />
     <Compile Include="Pages\MainPage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
