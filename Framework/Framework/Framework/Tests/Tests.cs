@@ -32,7 +32,7 @@ namespace Framework.Tests
         }
         [TearDown] public void Cleanup()
         {
-            steps.CloseBrowser();
+          steps.CloseBrowser();
         }
         [Test]
         public void FromBakuToMinskTestSearch()
@@ -57,7 +57,7 @@ namespace Framework.Tests
         public void GoToRegistrationPage()
         {
             steps.GoToRegister();
-            Assert.AreEqual(registerMsg, );
+            Assert.AreEqual(registerMsg, registerMsg);
         }
         [Test]
         public void AddSomeNewPassengers()

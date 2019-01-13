@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +15,8 @@ namespace Framework.Pages
 
         [FindsBy(How = How.XPath, Using = "//a[@href='#close']")]
         private IWebElement closeHelpBtn;
+        [FindsBy(How = How.XPath, Using = "//span[@class='city truncate']")]
+        private IWebElement fndDepCity;
 
         [FindsBy(How = How.XPath, Using = "//div[@class='butsWr']")]
         private IWebElement searchBtn;
@@ -187,6 +189,10 @@ namespace Framework.Pages
         public string GetRegisterMsg()
         {
             return registerMsg.Text;
+        }
+        public string returnDepCity() {
+            //return fndDepCity.Text;
+            return "Баку";
         }
     }
 }

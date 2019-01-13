@@ -37,8 +37,7 @@ namespace Framework.Steps
         }
         public string findDepCity()
         {
-            BookPage bookPage = new BookPage(driver);
-            return bookPage.returnDepCity();
+            return mainPage.returnDepCity();
         }
 
 
