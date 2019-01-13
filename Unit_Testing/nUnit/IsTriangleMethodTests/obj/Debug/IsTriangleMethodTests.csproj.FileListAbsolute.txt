@@ -1,0 +1,13 @@
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\bin\Debug\IsTriangleMethodTests.dll
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\bin\Debug\IsTriangleMethodTests.pdb
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\bin\Debug\nUnit.exe
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\bin\Debug\nunit.framework.dll
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\bin\Debug\nUnit.pdb
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\bin\Debug\nUnit.exe.config
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\bin\Debug\nunit.framework.pdb
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\bin\Debug\nunit.framework.xml
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\obj\Debug\IsTriangleMethodTests.csprojAssemblyReference.cache
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\obj\Debug\IsTriangleMethodTests.csproj.CoreCompileInputs.cache
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\obj\Debug\IsTriangleMethodTests.csproj.CopyComplete
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\obj\Debug\IsTriangleMethodTests.dll
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\IsTriangleMethodTests\obj\Debug\IsTriangleMethodTests.pdb

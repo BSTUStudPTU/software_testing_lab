@@ -1,0 +1,15 @@
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\bin\Debug\PageObject.exe.config
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\bin\Debug\PageObject.exe
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\bin\Debug\PageObject.pdb
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\bin\Debug\WebDriver.dll
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\bin\Debug\WebDriver.Support.dll
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\bin\Debug\WebDriver.xml
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\bin\Debug\WebDriver.Support.xml
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\obj\Debug\PageObject.csprojAssemblyReference.cache
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\obj\Debug\PageObject.csproj.CoreCompileInputs.cache
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\obj\Debug\PageObject.csproj.CopyComplete
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\obj\Debug\PageObject.exe
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\obj\Debug\PageObject.pdb
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\bin\Debug\nunit.framework.dll
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\bin\Debug\nunit.framework.pdb
+D:\WORK\BSTU_LABS\software_testing_lab\Page Object\PageObject\PageObject\bin\Debug\nunit.framework.xml

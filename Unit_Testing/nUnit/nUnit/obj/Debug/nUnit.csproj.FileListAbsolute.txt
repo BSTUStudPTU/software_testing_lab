@@ -1,0 +1,11 @@
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\nUnit\bin\Debug\nUnit.exe.config
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\nUnit\bin\Debug\nUnit.exe
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\nUnit\bin\Debug\nUnit.pdb
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\nUnit\bin\Debug\nunit.framework.dll
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\nUnit\bin\Debug\nunit.framework.pdb
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\nUnit\bin\Debug\nunit.framework.xml
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\nUnit\obj\Debug\nUnit.csprojAssemblyReference.cache
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\nUnit\obj\Debug\nUnit.csproj.CoreCompileInputs.cache
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\nUnit\obj\Debug\nUnit.csproj.CopyComplete
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\nUnit\obj\Debug\nUnit.exe
+D:\WORK\BSTU_LABS\software_testing_lab\Unit_Testing\nUnit\nUnit\obj\Debug\nUnit.pdb
